@@ -2,9 +2,11 @@
 var budgetPrice;
 var time;
 var foods = [];
-var foodsLength = 12;
+var foodsLength = 101;
 var allergies = [];
-var allergiesLength = 2;
+var allergiesLength = 101;
+var diets = [];
+var dietsLength = 2;
 
 //input function
 function input(){
@@ -17,12 +19,22 @@ function input(){
     }
 
     //set values in array of allergies
-    /*for(var i = 0; i < allergiesLength; i ++){
+    for(var i = 0; i < allergiesLength; i ++){
         allergies[i] = document.getElementById(i + "A").checked;
-    }*/
+    }
+
+    //set values for the diets
+    for(var i = 0; i < dietsLength; i ++){
+        diets[i] = document.getElementById(i + "D").checked;
+    }
 }
 
 function dropdown(id) {
+    for(var i = 0; i <  document.getElementsByClassName("dropdown-check-list").length; i ++) {
+        if(!(document.getElementsByClassName("dropdown-check-list").item(i) == document.getElementById(id)))
+            document.getElementsByClassName("dropdown-check-list").item(i).classList.remove("visible");
+    }
+
     if (document.getElementById(id).classList.contains("visible"))
         document.getElementById(id).classList.remove("visible");
     else
