@@ -17,9 +17,10 @@
     <input id="time" placeholder="30"/>
 
     <p>Enter food you have too cook with:</p>
+    <button onclick=dropdown("HerbsSpices")>Herbs/spices</button>
+    <button onclick=dropdown("Meat")>Meat</button>
     <div id="HerbsSpices" class="dropdown-check-list" tabindex="100">
-        <button onclick=dropdown("HerbsSpices")>Herbs/spices</button>
-        <ul class="items">
+        <ul class="items" style="list-style-type:none;">
             <li><input type="checkbox" id="0F" />Anise</li>
             <li><input type="checkbox" id="1F" />Basil</li>
             <li><input type="checkbox" id="2F" />Chives</li>
@@ -32,6 +33,26 @@
             <li><input type="checkbox" id="9F" />Thyme</li>
             <li><input type="checkbox" id="10F" />Rosemary</li>
             <li><input type="checkbox" id="11F" />Sage</li>
+            <li><input type="checkbox" id="12F" />Tabasco sauce</li>
+            <li><input type="checkbox" id="13F" />Paprika</li>
+            <li><input type="checkbox" id="14F" />Ginger</li>
+            <li><input type="checkbox" id="15F" />Tarragon</li>
+            <li><input type="checkbox" id="16F" />Vanilla</li>
+            <li><input type="checkbox" id="17F" />Cinnamon</li>
+            <li><input type="checkbox" id="18F" />Mint</li>
+        </ul>
+    </div>
+
+    <div id="Meat" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <p>Beef</p>
+            <li><input type="checkbox" id="19F" />Beef ribs</li>
+            <li><input type="checkbox" id="20F" />Beef brisket</li>
+            <li><input type="checkbox" id="21F" />Beef shank</li>
+            <li><input type="checkbox" id="22F" />Beef tri-tip</li>
+            <p>Chicken</p>
+            <li><input type="checkbox" id="23F" />Chicken wings</li>
+            <li><input type="checkbox" id="24F" />Chicken breast</li>
         </ul>
     </div>
 
