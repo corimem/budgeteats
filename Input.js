@@ -6,8 +6,6 @@ var appliances;
 var allergies;
 var diet;
 
-var array[] = ["item1","item2"];
-
 //input function
 function input(){
     budgetPrice = document.getElementById("budget").value;
