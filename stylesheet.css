@@ -18,6 +18,7 @@
             border: 15px solid DimGrey;
             padding: 30px;
             margin: 10px;
+           text-align: center;
       }
 label {
             fontsize: 15px;
