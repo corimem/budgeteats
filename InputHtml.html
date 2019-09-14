@@ -4,55 +4,33 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Input</title>
-    <style>
-        .header {
-             padding: 15px;
-             text-align: center;
-             background: white;
-            }
-
-    .header h1 {
-             font-size: 50px;
-            }
-    .header h2 {
-           font-size: 40px;
-        }
-
-        p {
-            font-size: 20px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            background-color: lightgrey;
-            width: 150px;
-            border: 15px solid DimGrey;
-            padding: 30px;
-            margin: 10px;
-        }
-        label {
-            fontsize: 15px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-        }
-        
-    </style>
 </head>
 <body>
-  <div class="header">
-  <h1>Budget Eats</h1>
-  <h2>What's in your fridge?</h2>
-  </div>
     <p>Enter your weekly budget in $:</p>
     <label for="budget">$</label>
     <input id="budget" placeholder="100.00" />
 
-    <p>Enter how much time you have to cook in minutes:</p>
+    <p>Enter how much time you have to cook per meal in minutes:</p>
     <label for="time">Minutes: </label>
     <input id="time" placeholder="30"/>
 
     <p>Enter food you have too cook with:</p>
-    <div class="dropdown">
-        <label for="eggs">eggs</label>
-        <input type="checkbox" id="eggs"/>
-        <label for="milk">milk</label>
-        <input type="checkbox" id="milk"/>
+    <div id="HerbsSpices" class="dropdown-check-list" tabindex="100">
+        <button onclick=dropdown("HerbsSpices")>Herbs/spices</button>
+        <ul class="items">
+            <li><input type="checkbox" id="0F" />Anise</li>
+            <li><input type="checkbox" id="1F" />Basil</li>
+            <li><input type="checkbox" id="2F" />Chives</li>
+            <li><input type="checkbox" id="3F" />Cilantro</li>
+            <li><input type="checkbox" id="4F" />Horseradish</li>
+            <li><input type="checkbox" id="5F" />Jalapeno</li>
+            <li><input type="checkbox" id="6F" />NutMeg</li>
+            <li><input type="checkbox" id="7F" />Oregano</li>
+            <li><input type="checkbox" id="8F" />Parsley</li>
+            <li><input type="checkbox" id="9F" />Thyme</li>
+            <li><input type="checkbox" id="10F" />Rosemary</li>
+            <li><input type="checkbox" id="11F" />Sage</li>
+        </ul>
     </div>
 
     <p></p>
