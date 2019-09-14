@@ -8,15 +8,15 @@
     </head>
 
 <body>
-    <p>Enter your budget for the meal in $:</p>
+    <header>Enter your budget for the meal in $:</header>
     <label for="budget">$</label>
     <input id="budget" placeholder="10.00" />
 
-    <p>Enter how much time you have to cook per meal in minutes:</p>
+    <header>Enter how much time you have to cook per meal in minutes:</header>
     <label for="time">Minutes: </label>
     <input id="time" placeholder="30"/>
 
-    <p>Enter food you have too cook with:</p>
+    <header>Enter food you have too cook with:</header>
     <button onclick=dropdown("HerbsSpicesF")>Herbs/spices</button>
     <button onclick=dropdown("MeatF")>Meat</button>
     <button onclick=dropdown("GrainF")>Grain</button>
@@ -167,7 +167,7 @@
         </ul>
     </div>
 
-    <p>Enter food you are allergic to:</p>
+    <header>Enter food you are allergic to:</header>
     <button onclick=dropdown("HerbsSpicesA")>Herbs/spices</button>
     <button onclick=dropdown("MeatA")>Meat</button>
     <button onclick=dropdown("GrainA")>Grain</button>
@@ -318,7 +318,7 @@
         </ul>
     </div>
 
-    <p>Select the diet(s) you are on:</p>
+    <header>Select the diet(s) you are on:</header>
     <ul class="items" style="list-style-type:none;">
         <li><input name="Vegetarian" type="checkbox" id="0D" />Vegetarian</li>
         <li><input name="None" type="checkbox" id="1D" />None</li>
