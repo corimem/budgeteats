@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Input</title>
+
+    </head>
+
+<body>
+   
+    <header>Enter food you have too cook with:</header>
+    <button onclick=dropdown("HerbsSpicesF")>Herbs/spices</button>
+    <button onclick=dropdown("MeatF")>Meat</button>
+    <button onclick=dropdown("GrainF")>Grain</button>
+    <button onclick=dropdown("DairyF")>Dairy</button>
+    <button onclick=dropdown("FruitsF")>Fruits</button>
+    <button onclick=dropdown("VegetablesF")>Vegetables</button>
+    <button onclick=dropdown("OtherF")>Other</button>
+
+    <div id="HerbsSpicesF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Anise" type="checkbox" id="0F" />Anise</li>
+            <li><input name="Basil" type="checkbox" id="1F" />Basil</li>
+            <li><input name="Chives" type="checkbox" id="2F" />Chives</li>
+            <li><input name="Cilantro" type="checkbox" id="3F" />Cilantro</li>
+            <li><input name="Cinnamon" type="checkbox" id="4F" />Cinnamon</li>
+            <li><input name="Ginger" type="checkbox" id="5F" />Ginger</li>
+            <li><input name="Horseradish" type="checkbox" id="6F" />Horseradish</li>
+            <li><input name="Jalapeno" type="checkbox" id="7F" />Jalapeno</li>
+            <li><input name="Nutmeg" type="checkbox" id="8F" />Nutmeg</li>
+            <li><input name="Oregano" type="checkbox" id="9F" />Oregano</li>
+            <li><input name="Paprika" type="checkbox" id="10F" />Paprika</li>
+            <li><input name="Parsley" type="checkbox" id="11F" />Parsley</li>
+            <li><input name="Rosemary" type="checkbox" id="12F" />Rosemary</li>
+            <li><input name="Sage" type="checkbox" id="13F" />Sage</li>
+            <li><input name="Tabasco sauce" type="checkbox" id="14F" />Tabasco sauce</li>
+            <li><input name="Thyme" type="checkbox" id="15F" />Thyme</li>
+            <li><input name="Tarragon" type="checkbox" id="16F" />Tarragon</li>
+            <li><input name="Vanilla" type="checkbox" id="17F" />Vanilla</li>
+            <li><input name="Mint" type="checkbox" id="18F" />Mint</li>
+        </ul>
+    </div>
+
+    <div id="MeatF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <p>Beef</p>
+            <li><input name="Beef brisket" type="checkbox" id="19F" />Beef brisket</li>
+            <li><input name="Beef ribs" type="checkbox" id="20F" />Beef ribs</li>
+            <li><input name="Beef shank" type="checkbox" id="21F" />Beef shank</li>
+            <li><input name="Beef tri-trip" type="checkbox" id="22F" />Beef tri-tip</li>
+            <p>Chicken</p>
+            <li><input name="Chicken breasts" type="checkbox" id="23F" />Chicken breasts</li>
+            <li><input name="Chicken wings" type="checkbox" id="24F" />Chicken wings</li>
+            <p>Pork</p>
+            <li><input name="Pork chops" type="checkbox" id="25F" />Pork chops</li>
+            <li><input name="Bacon" type="checkbox" id="26F" />Bacon</li>
+            <li><input name="Tenderloin" type="checkbox" id="27F" />Tenderloin</li>
+            <p>Fish</p>
+            <li><input name="Anchovies" type="checkbox" id="28F" />Anchovies</li>
+            <li><input name="Cod" type="checkbox" id="29F" />Cod</li>
+            <li><input name="Halibut" type="checkbox" id="30F" />Halibut</li>
+            <li><input name="Herring" type="checkbox" id="31F" />Herring</li>
+            <li><input name="Salmon" type="checkbox" id="32F" />Salmon</li>
+            <li><input name="Sturgeon" type="checkbox" id="33F" />Sturgeon</li>
+            <li><input name="Trout" type="checkbox" id="34F" />Trout</li>
+            <p>Other</p>
+            <li><input name="Duck" type="checkbox" id="35F" />Duck</li>
+            <li><input name="Sausage" type="checkbox" id="36F" />Sausage</li>
+        </ul>
+    </div>
+
+
+    <div id="GrainF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Bread" type="checkbox" id="37F" />Bread</li>
+            <li><input name="Cereal" type="checkbox" id="38F" />Cereal</li>
+            <li><input name="Flour" type="checkbox" id="39F" />Flour</li>
+            <li><input name="Tofu" type="checkbox" id="40F" />Tofu</li>
+        </ul>
+    </div>
+
+    <div id="DairyF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Cottage cheese" type="checkbox" id="41F" />Cottage cheese</li>
+            <li><input name="Milk" type="checkbox" id="42F" />Milk</li>
+            <li><input name="Pudding" type="checkbox" id="43F" />Pudding</li>
+            <li><input name="Yogurt" type="checkbox" id="44F" />Yogurt</li>
+        </ul>
+    </div>
+
+    <div id="FruitsF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Apples" type="checkbox" id="45F" />Apples</li>
+            <li><input name="Apricots" type="checkbox" id="46F" />Apricots</li>
+            <li><input name="Bananas" type="checkbox" id="47F" />Bananas</li>
+            <li><input name="Raspberries" type="checkbox" id="48F" />Raspberries</li>
+            <li><input name="Blueberries" type="checkbox" id="49F" />Blueberries</li>
+            <li><input name="Blackberries" type="checkbox" id="50F" />Blackberries</li>
+            <li><input name="Cherries" type="checkbox" id="51F" />Cherries</li>
+            <li><input name="Grapefruit" type="checkbox" id="52F" />Grapefruit</li>
+            <li><input name="Grapes" type="checkbox" id="53F" />Grapes</li>
+            <li><input name="Kiwis" type="checkbox" id="54F" />Kiwis</li>
+            <li><input name="Raisins" type="checkbox" id="55F" />Raisins</li>
+            <li><input name="Lemons" type="checkbox" id="56F" />Lemons</li>
+            <li><input name="Oranges" type="checkbox" id="57F" />Oranges</li>
+            <li><input name="Pumpkins" type="checkbox" id="58F" />Pumpkins</li>
+            <li><input name="Pineapple" type="checkbox" id="59F" />Pineapple</li>
+            <li><input name="Pears" type="checkbox" id="60F" />Pears</li>
+            <li><input name="Watermelon" type="checkbox" id="61F" />Watermelon</li>
+        </ul>
+    </div>
+
+    <div id="VegetablesF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Artichoke" type="checkbox" id="62F" />Artichoke</li>
+            <li><input name="Asparagus" type="checkbox" id="63F" />Asparagus</li>
+            <li><input name="Avocado" type="checkbox" id="64F" />Avocado</li>
+            <li><input name="Beets" type="checkbox" id="65F" />Beets</li>
+            <li><input name="Bell peppers" type="checkbox" id="66F" />Bell peppers</li>
+            <li><input name="Bok choy" type="checkbox" id="67F" />Bok choy</li>
+            <li><input name="Broccoli" type="checkbox" id="68F" />Broccoli</li>
+            <li><input name="Brussels Sprouts" type="checkbox" id="69F" />Brussels Sprouts</li>
+            <li><input name="Carrots" type="checkbox" id="70F" />Carrots</li>
+            <li><input name="Cabbage" type="checkbox" id="71F" />Cabbage</li>
+            <li><input name="Cauliflower" type="checkbox" id="72F" />Cauliflower</li>
+            <li><input name="Celery" type="checkbox" id="73F" />Celery</li>
+            <li><input name="Collard greens" type="checkbox" id="74F" />Collard greens</li>
+            <li><input name="Cucumber" type="checkbox" id="75F" />Cucumber</li>
+            <li><input name="Eggplant" type="checkbox" id="76F" />Eggplant</li>
+            <li><input name="Kale" type="checkbox" id="77F" />Kale</li>
+            <li><input name="Kidney beans" type="checkbox" id="78F" />Kidney beans</li>
+            <li><input name="Leeks" type="checkbox" id="79F" />Leeks</li>
+            <li><input name="Lentils" type="checkbox" id="80F" />Lentils</li>
+            <li><input name="Mushrooms" type="checkbox" id="81F" />Mushrooms</li>
+            <li><input name="Onions" type="checkbox" id="82F" />Onions</li>
+            <li><input name="Parsnips" type="checkbox" id="83F" />Parsnips</li>
+            <li><input name="Peas" type="checkbox" id="84F" />Peas</li>
+            <li><input name="Peppers" type="checkbox" id="85F" />Peppers</li>
+            <li><input name="Plantains" type="checkbox" id="86F" />Plantains</li>
+            <li><input name="Red cabbage" type="checkbox" id="87F" />Red cabbage</li>
+            <li><input name="Squash" type="checkbox" id="88F" />Squash</li>
+            <li><input name="String beans" type="checkbox" id="89F" />String beans</li>
+            <li><input name="Shallots" type="checkbox" id="90F" />Shallots</li>
+            <li><input name="Spinach" type="checkbox" id="91F" />Spinach</li>
+            <li><input name="Tomatoes" type="checkbox" id="92F" />Tomatoes</li>
+            <li><input name="Watercress" type="checkbox" id="93F" />Watercress</li>
+            <li><input name="Yams" type="checkbox" id="94F" />Yams</li>
+            <li><input name="Zucchini" type="checkbox" id="95F" />Zucchini</li>
+        </ul>
+    </div>
+
+    <div id="OtherF" class="dropdown-check-list" tabindex="100">
+        <ul class="items" style="list-style-type:none;">
+            <li><input name="Chocolate" type="checkbox" id="96F" />Chocolate</li>
+            <li><input name="Red wine" type="checkbox" id="97F" />Red wine</li>
+            <li><input name="Soy milk" type="checkbox" id="98F" />Soy milk</li>
+            <li><input name="Tortillas" type="checkbox" id="99F" />Tortillas</li>
+            <li><input name="Eggs" type="checkbox" id="100F" />Eggs</li>
+        </ul>
+    </div>
+
+    <p></p>
+    <button onclick="input()">Submit</button>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script src="Input.js"></script>
+</body>
+</html>
