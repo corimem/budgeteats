@@ -1,3 +1,18 @@
 body {
-  background-color: AliceBlue ; 
+  background-color: AliceBlue;
 }
+
+.dropdown-check-list {
+  display: inline-block;
+}
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
