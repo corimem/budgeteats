@@ -5,7 +5,6 @@ var foods;
 var appliances;
 var allergies;
 var diet;
-var something;
 
 //input function
 function input(){
