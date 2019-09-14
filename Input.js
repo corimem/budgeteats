@@ -1,5 +1,6 @@
 //vars
 var budgetPrice;
+var time;
 
 function input(){
     budgetPrice = document.getElementById("budget").value;
