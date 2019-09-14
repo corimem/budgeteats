@@ -14,22 +14,15 @@
     <input id="time" placeholder="30"/>
 
     <p>Enter food you have too cook with:</p>
-    <input id="foods" placeholder="eggs, milk, flour"/>
-
-    <p>Enter appliances you have too cook with:</p>
-    <input id="appliances" placeholder=""/>
+    <div class="dropdown">
+        <label for="eggs">eggs</label>
+        <input type="checkbox" id="eggs"/>
+        <label for="milk">milk</label>
+        <input type="checkbox" id="milk"/>
+    </div>
 
     <p></p>
     <button onclick="input()">Submit</button>
-    
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown"> class="dropdown-content">
-            <a href="#">Food 1</a>
-            <a href="#">Food 2</a>
-            <a href="#">Food 3</a>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
