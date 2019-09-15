@@ -12,19 +12,12 @@ p {
 }
 .header {
              
-             padding: 130px;
+             padding: 100px;
              text-align: center;
              background-image: url("Budget_Eats.jpg");
              background-repeat: no-repeat;
              background-size: contain;
              background-color: white;
-    
-            }
-.header h1 {
-             font-size: 100px;
-            }
-.header h2 {
-           font-size: 60px;
         }
 .header h3 {
   font-size: 175px;
