@@ -42,7 +42,7 @@ async function input(){
     document.getElementById("output").innerText = "";
 
     for(var i = 0; i < urls.length; i ++) {
-        document.getElementById("output").innerHTML += urls[i] + " ";
+        document.getElementById("output").innerHTML += urls[i];
     }
 }
 
@@ -52,6 +52,7 @@ async function API(input){
     const url = ('http://www.recipepuppy.com/api/?i=');
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     var finalUrl= (proxyUrl + url + input);
+    const ul = document.getElementById('recipeUrls');
     let resp = await fetch(finalUrl);
     let data = await resp.json();
         let Recipes = data.results;
