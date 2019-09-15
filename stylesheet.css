@@ -5,6 +5,8 @@
              background-image: url("Budget_Eats.jpg");
              background-repeat: no-repeat;
              background-size: contain;
+             background-color: white;
+    
             }
 .header h1 {
              font-size: 50px;
