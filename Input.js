@@ -40,7 +40,11 @@ function input(){
     }
     
     for(var i = 0; i < urls.length; i ++) {
-        document.getElementById("output").appendChild(document.createElement("p").appendChild(document.createTextNode(urls[i])));
+        var para = document.createElement("p");
+        var node = document.createTextNode(urls[i]);
+        para.appendChild(node);
+        var element = document.getElementById("output");
+        element.appendChild(para);
     }
 }
 
