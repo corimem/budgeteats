@@ -1,6 +1,14 @@
 
 p {
-  font-size: 30;
+  font-size: 25px;
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     background-color: lightgrey;
+     width: auto;
+     border: 3px solid DimGrey;
+     margin: 10px;
+     text-align: center;
+  
+  
 }
 .header {
              
