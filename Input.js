@@ -40,7 +40,7 @@ function input(){
     }
     
     for(var i = 0; i < urls.length; i ++) {
-        document.getElementById("table").appendChild(document.createTextNode(urls[i]));
+        document.getElementById("output").appendChild(document.createTextNode(urls[i]));
     }
 }
 
