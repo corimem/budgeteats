@@ -38,37 +38,25 @@ function input(){
     }
 }
 
-//API jank
+//API
 function API(input){
-    var stringy;
-    var urls = [];
+    const url = ('http://www.recipepuppy.com/api/?i=');
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    var url = ('http://www.recipepuppy.com/api/?i=');
-
-    fetch(proxyUrl + url + input)
-        .then(function (response) {
-            return response.json();
+    var finalUrl= (proxyUrl + url + input);
+    const ul = document.getElementById('recipeUrls');
+    fetch(finalUrl)
+        .then((resp) => resp.json()).then(function(data){
+        let Recipes = data.results;
+        var i = 0;
+        Recipes.forEach(function(recipes){
+            console.log(recipes.href);
+            urls[i] = recipes.href;
+            i ++;
         })
-        .then(function (myJson) {
-            stringy = JSON.stringify(myJson);
-            for(var i = 0; i < 10; i ++){
-                urls[i] = stringy.substring(nthIndexOf(stringy,"http",i),stringy.length);
-                urls[i] = urls[i].substring(0,urls[i].indexOf("\""));
-            }
-            for(var i = 0; i < 10; i ++){
-                console.log(urls[i]);
-            }
-        });
-    var stuff = urls[0];
+    })
+        .catch(function(error){
 
-    function nthIndexOf(str, input, n){
-        var index = -input.length;
-        for(var i = 0; i < n+1; i ++) {
-            index += str.indexOf(input) + input.length;
-            str = str.substring((str.indexOf(input)) + input.length , str.length);
-        }
-        return index;
-    }
+    });
 }
 
 function dropdown(id) {
