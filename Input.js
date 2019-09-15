@@ -1,4 +1,5 @@
 //vars
+var prices = []
 var budgetPrice;
 var time;
 var foods = [];
@@ -40,6 +41,7 @@ function input(){
     window.location = "output.html";
     for(var i = 0; i < urls.length; i ++) {
         document.getElementById("table").appendChild(urls[i]);
+    }
 }
 
 //API
