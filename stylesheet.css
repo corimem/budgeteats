@@ -2,7 +2,7 @@
 .header {
              
              padding: 130px;
-             text-align: -webkit-right;
+             text-align: center;
              background-image: url("Budget_Eats.jpg");
              background-repeat: no-repeat;
              background-size: contain;
@@ -10,10 +10,10 @@
     
             }
 .header h1 {
-             font-size: 60px;
+             font-size: 80px;
             }
 .header h2 {
-           font-size: 30px;
+           font-size: 40px;
         }
  header {
             font-size: 20px;
