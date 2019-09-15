@@ -1,7 +1,7 @@
 
 p {
   font-size: 25px;
-     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     font-family: 'Titillium Web', sans-serif;
      background-color: lightgrey;
      width: auto;
      border: 3px solid DimGrey;
@@ -28,7 +28,7 @@ p {
         }
  header {
             font-size: 20px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-family: 'Titillium Web', sans-serif;
             background-color: lightgrey;
             width: auto;
             border: 5px solid DimGrey;
@@ -41,7 +41,7 @@ li {
 }
 label {
             fontsize: 15px;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-family: 'Titillium Web', sans-serif;
         }
 body {
   background-color:#b3b3cc;
