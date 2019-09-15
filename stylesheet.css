@@ -1,5 +1,6 @@
 
 .header {
+             class="rounded-pill"
              padding: 15px;
              text-align: center;
              background-image: url("Budget_Eats.jpg");
