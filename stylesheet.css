@@ -1,7 +1,7 @@
 
 .header {
              
-             padding: 15px;
+             padding: 130px;
              text-align: center;
              background-image: url("Budget_Eats.jpg");
              background-repeat: no-repeat;
@@ -10,33 +10,34 @@
     
             }
 .header h1 {
-             font-size: 200px;
+             font-size: 40px;
             }
 .header h2 {
-           font-size: 400px;
+           font-size: 20px;
         }
  header {
-            font-size: 200px;
+            font-size: 20px;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
             background-color: lightgrey;
-            width: 2500px;
-            border: 150px solid DimGrey;
-            padding: 300px;
-            margin: 100px;
+            width: auto;
+            border: 15px solid DimGrey;
+            padding: 30px;
+            margin: 10px;
            text-align: center;
       }
 label {
-            fontsize: 150px;
+            fontsize: 15px;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
 body {
   background-color: AliceBlue;
 }
 .dropdown-check-list ul.items {
-  padding: 20px;
+  padding: 2px;
   display: none;
   margin: 0;
 }
 .dropdown-check-list.visible .items {
   display: block;
 }
+
