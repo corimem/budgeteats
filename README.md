@@ -1,4 +1,4 @@
 # budgeteats
 To run: 
-Click homepage, navigate from there. 
+Download files, start with Homepage.html, navigate from there. 
 Note: not all inputs are fully functional
