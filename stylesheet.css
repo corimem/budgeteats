@@ -16,13 +16,19 @@ p {
              text-align: center;
              background-image: url("Budget_Eats.jpg");
              background-repeat: no-repeat;
-             background-size: 400px;
+             background-size: 300px;
              background-position-x: center;
              background-color: white;
         }
 .header h3 {
   font-size: 100px;
     color: green;
+  text-align: right;
+}
+.header h4 {
+  font-size: 100px;
+    color: green;
+  text-align: left;
 }
  header {
             font-size: 20px;
