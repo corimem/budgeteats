@@ -10,30 +10,30 @@
     
             }
 .header h1 {
-             font-size: 50px;
+             font-size: 200px;
             }
 .header h2 {
-           font-size: 40px;
+           font-size: 400px;
         }
- //header {
-            font-size: 20px;
+ header {
+            font-size: 200px;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
             background-color: lightgrey;
-            width: 250px;
-            border: 15px solid DimGrey;
-            padding: 30px;
-            margin: 10px;
+            width: 2500px;
+            border: 150px solid DimGrey;
+            padding: 300px;
+            margin: 100px;
            text-align: center;
       }
 label {
-            fontsize: 15px;
+            fontsize: 150px;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
 body {
   background-color: AliceBlue;
 }
 .dropdown-check-list ul.items {
-  padding: 2px;
+  padding: 20px;
   display: none;
   margin: 0;
 }
