@@ -11,6 +11,9 @@ var diets = [];
 var dietsLength = 2;
 var urls = [];
 
+//document vars
+var modal = document.getElementById("output");
+
 //input function
 function input(){
     ingredients = "";
@@ -40,11 +43,7 @@ function input(){
     }
     
     for(var i = 0; i < urls.length; i ++) {
-        var para = document.createElement("p");
-        var node = document.createTextNode(urls[i]);
-        para.appendChild(node);
-        var element = document.getElementById("output.modal-body");
-        element.appendChild(para);
+        modal.syle.display = urls[i];
     }
 }
 
