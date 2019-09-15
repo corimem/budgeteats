@@ -8,6 +8,7 @@ var allergies = [];
 var allergiesLength = 101;
 var diets = [];
 var dietsLength = 2;
+var urls = [];
 
 //input function
 function input(){
@@ -36,6 +37,7 @@ function input(){
     for(var i = 0; i < dietsLength; i ++){
         diets[i] = document.getElementById(i + "D").checked;
     }
+    window.location = "output.html";
 }
 
 //API
