@@ -29,7 +29,7 @@ p {
  header {
             font-size: 20px;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
-            background-color: lightgrey;
+            background-color: white;
             width: auto;
             border: 5px solid DimGrey;
             padding: 30px;
@@ -44,7 +44,7 @@ label {
             font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
 body {
-  background-color:#b3b3cc;
+  background-color: LightGrey;
 }
 .dropdown-check-list ul.items {
 
