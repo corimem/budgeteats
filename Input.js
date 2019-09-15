@@ -9,10 +9,9 @@ var allergies = [];
 var allergiesLength = 101;
 var diets = [];
 var dietsLength = 2;
-var urls = [];
 
 //input function
-function input(){
+async function input(){
     ingredients = "";
     budgetPrice = document.getElementById("budget").value;
     time = document.getElementById("time").value;
@@ -27,7 +26,7 @@ function input(){
         if(foods[i])
             ingredients += document.getElementById(i + "F").name + ",%20";
     }
-    API(ingredients);
+    let urls = await API(ingredients);
 
     //set values in array of allergies
     for(var i = 0; i < allergiesLength; i ++){
@@ -39,30 +38,31 @@ function input(){
         diets[i] = document.getElementById(i + "D").checked;
     }
 
+    //display urls
+    document.getElementById("output").innerText = "";
+
     for(var i = 0; i < urls.length; i ++) {
-        document.getElementById("output").appendChild(document.createTextNode(urls[i]));
+        document.getElementById("output").innerHTML += urls[i];
     }
 }
 
 //API
-function API(input){
+async function API(input){
+    let urls = [];
     const url = ('http://www.recipepuppy.com/api/?i=');
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     var finalUrl= (proxyUrl + url + input);
     const ul = document.getElementById('recipeUrls');
-    fetch(finalUrl)
-        .then((resp) => resp.json()).then(function(data){
+    let resp = await fetch(finalUrl);
+    let data = await resp.json();
         let Recipes = data.results;
         var i = 0;
-        Recipes.forEach(function(recipes){
+        Recipes.forEach(function(recipes) {
             console.log(recipes.href);
             urls[i] = recipes.href;
-            i ++;
+            i++;
         })
-    })
-        .catch(function(error){
-
-    });
+        return urls;
 }
 
 function dropdown(id) {
