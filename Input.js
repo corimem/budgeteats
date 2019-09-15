@@ -38,6 +38,8 @@ function input(){
         diets[i] = document.getElementById(i + "D").checked;
     }
     window.location = "output.html";
+    for(var i = 0; i < urls.length; i ++) {
+        document.getElementById("table").appendChild(urls[i]);
 }
 
 //API
