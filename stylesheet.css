@@ -65,7 +65,10 @@ body {
 
 }
 
-
+out { 
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding: 2px;
+}
 
 
 ul li a{
