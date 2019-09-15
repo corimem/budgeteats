@@ -43,7 +43,7 @@ function input(){
         var para = document.createElement("p");
         var node = document.createTextNode(urls[i]);
         para.appendChild(node);
-        var element = document.getElementById("output");
+        var element = document.getElementById("output.modal-body");
         element.appendChild(para);
     }
 }
