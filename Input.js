@@ -40,7 +40,7 @@ function input(){
     }
     
     for(var i = 0; i < urls.length; i ++) {
-        document.getElementById("table").appendChild(urls[i]);
+        document.getElementById("output").appendChild(urls[i]);
     }
 }
 
@@ -55,7 +55,6 @@ function API(input){
         let Recipes = data.results;
         var i = 0;
         Recipes.forEach(function(recipes){
-            console.log(recipes.href);
             urls[i] = recipes.href;
             i ++;
         })
