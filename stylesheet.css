@@ -55,6 +55,9 @@ body {
 }
 .dropdown-check-list.visible .items {
   display: block;
-  text-align:center;
+  text-align:left;
+  width: fit-content;
+  margin:auto;
+
 }
 
