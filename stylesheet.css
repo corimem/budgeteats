@@ -38,6 +38,10 @@ p {
       }
 li {
       font-size: 20px;
+     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 label {
             fontsize: 15px;
