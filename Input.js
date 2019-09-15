@@ -11,9 +11,6 @@ var diets = [];
 var dietsLength = 2;
 var urls = [];
 
-//document vars
-var modal = document.getElementById("output");
-
 //input function
 function input(){
     ingredients = "";
@@ -41,9 +38,9 @@ function input(){
     for(var i = 0; i < dietsLength; i ++){
         diets[i] = document.getElementById(i + "D").checked;
     }
-    
+
     for(var i = 0; i < urls.length; i ++) {
-        modal.syle.display = urls[i];
+        document.getElementById("output").appendChild(document.createTextNode(urls[i]));
     }
 }
 
@@ -58,6 +55,7 @@ function API(input){
         let Recipes = data.results;
         var i = 0;
         Recipes.forEach(function(recipes){
+            console.log(recipes.href);
             urls[i] = recipes.href;
             i ++;
         })
