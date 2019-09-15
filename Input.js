@@ -38,7 +38,7 @@ function input(){
     for(var i = 0; i < dietsLength; i ++){
         diets[i] = document.getElementById(i + "D").checked;
     }
-    window.location = "output.html";
+    
     for(var i = 0; i < urls.length; i ++) {
         document.getElementById("table").appendChild(urls[i]);
     }
