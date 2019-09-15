@@ -1,7 +1,7 @@
 
 p {
   font-size: 25px;
-     font-family: 'Titillium Web', sans-serif;
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
      background-color: lightgrey;
      width: auto;
      border: 3px solid DimGrey;
@@ -28,8 +28,8 @@ p {
         }
  header {
             font-size: 20px;
-            font-family: 'Titillium Web', sans-serif;
-            background-color: white;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            background-color: lightgrey;
             width: auto;
             border: 5px solid DimGrey;
             padding: 30px;
@@ -41,11 +41,10 @@ li {
 }
 label {
             fontsize: 15px;
-            font-family: 'Titillium Web', sans-serif;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
         }
 body {
-  background-color: lightgrey;
-  font-family: 'Titillium Web', sans-serif;
+  background-color:#b3b3cc;
 }
 .dropdown-check-list ul.items {
 
@@ -62,6 +61,9 @@ body {
 
 }
 
+
+
+
 ul li a{
     text-decoration: none;
     color: black;
@@ -73,6 +75,7 @@ ul li a:hover{
     background-color: #ffffff;
     color: #000;
 }
+
 ul li.active a{
     background-color: #fff;
     color: #000
