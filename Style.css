@@ -3,6 +3,7 @@ body{
     height: 100vh;
     background-size: cover;
     background -position: center;
+    font-family: 'Rajdhani', sans-serif;
 
 }
 
@@ -26,8 +27,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
-    border: 1px solid #fff;
+    padding: 20px 40px;
     transition: 0.6s ease;
 }
 
@@ -53,7 +53,7 @@ ul li.active a{
 
 }
 .form input{
-    font-family: "Roboto", "SansSerif";
+    font-family: 'Rajdhani', sans-serif;
     outline: 1;
      background:white;
     width:100%
@@ -65,7 +65,7 @@ ul li.active a{
 
 }
 .form button{
-    font-family: "Roboto";
+    font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
     outline: 0;
     background: #4CAF50;

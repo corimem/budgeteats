@@ -4,7 +4,6 @@ var budgetPrice;
 var time;
 var foods = [];
 var foodsLength = 101;
-var ingredientsArr = [];
 var ingredients;
 var allergies = [];
 var allergiesLength = 101;
@@ -23,15 +22,10 @@ async function input(){
     }
 
     //build the ingredients string
-    var o = 0;
     for(var i = 0; i < foodsLength; i ++){
-        if(foods[i]) {
-            ingredientsArr[o] =  document.getElementById(i + "F").name;
+        if(foods[i])
             ingredients += document.getElementById(i + "F").name + ",%20";
-            o ++;
-        }
     }
-
     let urls = await API(ingredients);
 
     //set values in array of allergies
@@ -49,7 +43,6 @@ async function input(){
 
     for(var i = 0; i < urls.length; i ++) {
         document.getElementById("output").innerHTML += urls[i];
-        document.getElementById("output").appendChild(document.createElement("p"));
     }
 }
 
@@ -59,6 +52,7 @@ async function API(input){
     const url = ('http://www.recipepuppy.com/api/?i=');
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     var finalUrl= (proxyUrl + url + input);
+    const ul = document.getElementById('recipeUrls');
     let resp = await fetch(finalUrl);
     let data = await resp.json();
         let Recipes = data.results;
